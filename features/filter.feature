@@ -15,13 +15,13 @@ Background: locations have been added to the database
     | Hunan Home's Restaurant          | 622 Jackson St.          | Family owned Chinese cooking with booths          | Restaurant
     | Good Mong Kok Bakery             | 1039 Stockton St.        | Homemade dim sum and baked goods                  | Restaurant
 
-    And I am on the Locations page
+    And I am on the Points of Interest page
     Then 6 seed points should exist
     
 
 Scenario: filter locations by restaurants
     Given I am on Locations homepage
-    When I follow "Restaurants"
+    When I check the following categories: Dining
     Then I should see "Hong Kong Clay Pot Restaurant"
     And "Hunan Home's Restaurant"
     And "Good Mong Kok Bakery"

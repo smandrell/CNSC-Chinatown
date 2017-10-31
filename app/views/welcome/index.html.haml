@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title W3.CSS
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "https://www.w3schools.com/w3css/4/w3.css", :rel => "stylesheet"}/
+  %body
+    #mySidebar.w3-sidebar.w3-bar-block.w3-card-2.w3-animate-left{:style => "display:none"}
+      %button.w3-bar-item.w3-button.w3-large{:onclick => "w3_close()"} Close
+      %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} Points of Interest
+      %a.w3-bar-item.w3-button{:href => "#"} .
+      %a.w3-bar-item.w3-button{:href => "#"} .
+      %a.w3-bar-item.w3-button{:href => "/map"} Interactive Map
+    #main
+      .w3-teal
+        %button#openNav.w3-button.w3-teal.w3-xlarge{:onclick => "w3_open()"} ☰
+        .w3-container{:style => "display:inline-block;"}
+          %h1{:style => "text-align:center;"} Welcome to Chinatown!
+      .w3-container
+        %p San Francisco Chinatown is the largest Chinatown outside of Asia as well as the oldest Chinatown in North America. It is one of the top tourist attractions in San Francisco. You can use this site to learn more about the attractions, culture, history, and events in Chinatown. If you plan to visit us, you can book a Chinatown tour, hotel rooms, and more.
+        %p Upcoming Events:
+    :javascript
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }

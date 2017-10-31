@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "haml-rails", "~> 1.0"
+
 group :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended

@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @point.name
+%p
+  %strong Address:
+  = @point.address
+%p
+  %strong Latitude:
+  = @point.latitude
+%p
+  %strong Longitude:
+  = @point.longitude
+%p
+  %strong Description:
+  = @point.description
+= link_to 'Edit', edit_point_path(@point)
+|
+= link_to 'Back', points_path
