@@ -20,3 +20,15 @@ Scenario: navigate to points of interest page
   When I press "openNav"
   And I follow "Points of Interest"
   Then I should see "Listing Points of Interest"
+  
+Scenario: Create new point and display
+  Given I am on the Points page
+  And I follow "New Point"
+  Then I should see the form field "Name"
+  And I should see the form field "Category"
+  And I should see the form field "Latitude"
+  And I should see the form field "Longitude"
+  And I should see the form field "Description"
+  And I should see the form field "Address"
+  When I press "Create Point"
+  

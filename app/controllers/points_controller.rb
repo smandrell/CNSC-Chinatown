@@ -1,6 +1,11 @@
 class PointsController < ApplicationController
   before_action :set_point, only: [:show, :edit, :update, :destroy]
 
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def point_params
+    params.require(:point).permit(:name, :address, :latitude, :longitude, :description, :category)
+  end
+  
   # GET /points
   # GET /points.json
   def index
@@ -65,10 +70,5 @@ class PointsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_point
       @point = Point.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def point_params
-      params.require(:point).permit(:name, :address, :latitude, :longitude, :description)
     end
 end

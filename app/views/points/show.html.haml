@@ -14,6 +14,9 @@
 %p
   %strong Description:
   = @point.description
+%p
+  %strong Category:
+  = @point.category
 = link_to 'Edit', edit_point_path(@point)
 |
 = link_to 'Back', points_path
