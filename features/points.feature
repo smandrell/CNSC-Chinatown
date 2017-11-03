@@ -25,7 +25,6 @@ Scenario: Create new point and display
   Given I am on the Points page
   And I follow "New Point"
   Then I should see the form field "Name"
-  And I should see the form field "Category"
   And I should see the form field "Latitude"
   And I should see the form field "Longitude"
   And I should see the form field "Description"
