@@ -9,7 +9,14 @@ class PointsController < ApplicationController
   # GET /points
   # GET /points.json
   def index
-    @points = Point.all
+    @all_categories = Point.all_categories
+    @selected_categories = params[:categories] || session[:categories] || {}
+    
+    if @selected_categories == {}
+      @selected_categories = Hash[@all_categories.map {|category| [category, category]}]
+    end
+    
+    @points = Point.where(rating: @selected_categories.keys)
   end
 
   # GET /points/1
