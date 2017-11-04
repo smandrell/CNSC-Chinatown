@@ -16,7 +16,7 @@ class PointsController < ApplicationController
       @selected_categories = Hash[@all_categories.map {|category| [category, category]}]
     end
     
-    @points = Point.where(rating: @selected_categories.keys)
+    @points = Point.where(category: @selected_categories.keys)
   end
 
   # GET /points/1
