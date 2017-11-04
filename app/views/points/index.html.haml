@@ -1,5 +1,9 @@
 %p#notice= notice
 
+= form_tag points_path, method: 'get' do
+  = select_tag :category, Options::TYPE
+  = submit_tag 'Filter'
+
 %h1 Listing Points of Interest
 %table
   %thead
