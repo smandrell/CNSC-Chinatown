@@ -18,9 +18,9 @@ Background: locations have been added to the database
     And I am on the Points page
     Then 6 seed points should exist
     
-
+@wip
 Scenario: filter locations by restaurants
-    Given PENDING: I am on the Points page
+    Given I am on the Points page
     When I check the following categories: Dining
     Then I should see "Hong Kong Clay Pot Restaurant"
     And I should see "Hunan Home's Restaurant"

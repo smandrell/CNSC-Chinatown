@@ -12,8 +12,9 @@ Background: restaurants have been added to the database
   And I am on the Restaurant page
   Then 2 seed points should exist
 
+@wip
 Scenario: navigate to restaurants page
-  Given PENDING: I am on the Chinatown homepage
+  Given I am on the Chinatown homepage
   When I press "openNav"
   And I follow "Restaurants"
   Then I should see "Listing Restaurants"
