@@ -12,9 +12,9 @@ Heroku App URL
 https://guarded-spire-34943.herokuapp.com/
 
 Code Climate Badge
-[![Code Climate](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown/badges/gpa.svg)](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/maintainability)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/maintainability)
 
-[![Test Coverage](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown/badges/coverage.svg)](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown/coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/test_coverage)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/test_coverage)
 
 Customer Business Needs:
 
