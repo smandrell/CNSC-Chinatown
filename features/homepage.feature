@@ -1,4 +1,4 @@
-Feature: display restaurants on Restaurant page
+Feature: properly navigate the homepage
 
   As a user interest in Chinatown restaurants
   So that I can quickly look at a list of restaurants in Chinatown
@@ -6,16 +6,14 @@ Feature: display restaurants on Restaurant page
 
 Background: restaurants have been added to the database
 
-  Given the following restaurants exist:
-  | name                   | description |
-  | Panda Express          | fast-food   |
-  | PF Chang               | take-out    |
+  Given PENDING: the following points of interests exist:
+
 
   And I am on the Restaurant page
-  Then 2 seed restaurants should exist
+  Then 2 seed points should exist
 
 Scenario: navigate to restaurants page
-  Given I am on the Chinatown homepage
+  Given PENDING: I am on the Chinatown homepage
   When I press "openNav"
   And I follow "Restaurants"
   Then I should see "Listing Restaurants"

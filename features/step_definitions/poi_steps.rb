@@ -1,3 +1,7 @@
+Given /^PENDING/ do
+    pending
+end
+
 Given /the following points of interest exist/ do |points_table|
     points_table.hashes.each do |p|
         Point.create!(p)
