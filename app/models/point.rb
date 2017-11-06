@@ -4,6 +4,6 @@ class Point < ActiveRecord::Base
     
     # All possible categories for a point of interest.
     def self.all_categories
-        %w('Dining', 'Historical', 'Attraction')
+        %w(Dining Historical Attraction)
     end
 end
