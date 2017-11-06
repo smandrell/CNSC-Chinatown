@@ -14,6 +14,8 @@ https://guarded-spire-34943.herokuapp.com/
 Code Climate Badge
 [![Code Climate](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown/badges/gpa.svg)](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown)
 
+[![Test Coverage](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown/badges/coverage.svg)](https://codeclimate.com/github/Ebrahem-Farooqui/CNSC-Chinatown/coverage)
+
 Customer Business Needs:
 
 Website: Interactive map of Chinatown (SF) where users can see restaurants, merchants, stores, etc. based off of location. User will receive notifications when they are near points of potential interests.
