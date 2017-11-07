@@ -9,7 +9,7 @@ Travis CI Badge
 [![Build Status](https://travis-ci.org/smandrell/CNSC-Chinatown.svg?branch=master)](https://travis-ci.org/smandrell/CNSC-Chinatown)
 
 Heroku App URL
-https://guarded-spire-34943.herokuapp.com/
+https://young-brushlands-70706.herokuapp.com
 
 Code Climate Badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/maintainability)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/maintainability)
