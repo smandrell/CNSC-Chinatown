@@ -3,12 +3,13 @@ env:
     - CC_TEST_REPORTER_ID=9ddc7d037259d59a05b0492ed33051404c20dbc0b7ac439803d1e086bfa943f9
 language: ruby
 rvm:
-  - 2.3.0
+  - 2.3.1
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rspec
   - bundle exec rake db:test:prepare
   - bundle exec cucumber
