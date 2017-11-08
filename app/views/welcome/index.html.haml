@@ -123,9 +123,9 @@
     #mySidebar.w3-sidebar.w3-bar-block.w3-card-2.w3-animate-left{:style => "display:none"}
       %button.w3-bar-item.w3-button.w3-large{:onclick => "w3_close()"} Close
       %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} Points of Interest
-      %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} &nbsp&nbsp - Dining
-      %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} &nbsp&nbsp - Attractions
-      %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} &nbsp&nbsp - Historical
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Dining" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Dining
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Attraction" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Attractions
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Historical" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Historical
       %a.w3-bar-item.w3-button{:href => "#"} .
       %a.w3-bar-item.w3-button{:href => "#"} .
       %a.w3-bar-item.w3-button{:href => "/map"} Interactive Map
