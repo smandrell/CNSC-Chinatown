@@ -16,6 +16,7 @@ module NavigationHelpers
     when /^the (Restaurant )page$/ then '/restaurants'
     when /^the (Points )page$/ then '/points'
     when /^the (Chinatown )?home\s?page$/ then '/'
+    when /^the (New Point )page$/ then '/points/new'
     
     
 
