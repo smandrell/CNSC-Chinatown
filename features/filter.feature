@@ -17,7 +17,8 @@ Background: locations have been added to the database
 
     And I am on the Points page
     Then 6 seed points should exist
-    
+
+@wip    
 Scenario: filter locations by restaurants
     Given I am on the Points page
     When I check the following categories: Dining
@@ -26,7 +27,8 @@ Scenario: filter locations by restaurants
     And I should see "Good Mong Kok Bakery"
     And I should not see "Dragon's Gate"
     And I should not see "Tianhou Temple"
-    
+
+@wip    
 Scenario: all categories selected
   When I check the following categories: Dining, Historical, Attraction
   And I press "Refresh"
