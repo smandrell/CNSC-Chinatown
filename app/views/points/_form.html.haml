@@ -30,6 +30,6 @@
   .field
     = f.label :category
     %br/
-    = f.text_area :category
+    = f.select :category, ['Dining', 'Attraction', 'Historical']
   .actions
     = f.submit
