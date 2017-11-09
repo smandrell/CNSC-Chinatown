@@ -28,7 +28,8 @@ Scenario: Navigate to Create New point
   And I should see the form field "Longitude"
   And I should see the form field "Description"
   And I should see the form field "Address"
-  
+
+@wip  
 Scenario: Create new Point
   Given I follow "New Point"
   And I fill in "Name" with "Michael's Restraunt"
