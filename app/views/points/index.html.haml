@@ -38,7 +38,7 @@
         %td= point.address
         %td= point.latitude
         %td= point.longitude
-        %td= point.description
+        %td{:width => "40%"}= point.description
         %td= point.category
         %td= link_to 'Show', point
         %td= link_to 'Edit', edit_point_path(point)
