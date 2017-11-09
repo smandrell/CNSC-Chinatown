@@ -38,13 +38,15 @@ Scenario: Create new Point
   Then I should see "Michael's Restraunt"
   And I should see "Points of Interest"
   
+@wip
 Scenario: Edit a Point
   Given I follow "Edit"
   When I fill in "Description" with "Best food ever!"
   And I press "Update Point"
   Then I should see "Best food ever!"
   And I should see "Points of Interest"
-  
+
+@wip
 Scenario: Delete a Point
   Given I follow "Destroy"
   And I press "ok"
