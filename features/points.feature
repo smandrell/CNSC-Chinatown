@@ -19,15 +19,40 @@ Scenario: navigate to points of interest page
   Given I am on the Chinatown homepage
   When I press "openNav"
   And I follow "Points of Interest"
-  Then I should see "Listing Points of Interest"
+  Then I should see "Points of Interest"
   
-Scenario: Create new point and display
-  Given I am on the Points page
-  And I follow "New Point"
+Scenario: Navigate to Create New point
+  Given I follow "New Point"
   Then I should see the form field "Name"
   And I should see the form field "Latitude"
   And I should see the form field "Longitude"
   And I should see the form field "Description"
   And I should see the form field "Address"
+  
+Scenario: Create new Point
+  Given I follow "New Point"
+  And I fill in "Name" with "Michael's Restraunt"
+  And I fill in "Category" with "Dining"
   When I press "Create Point"
+  And I follow "Back"
+  Then I should see "Michael's Restraunt"
+  And I should see "Points of Interest"
+  
+Scenario: Edit a Point
+  Given I follow "Edit"
+  When I fill in "Description" with "Best food ever!"
+  And I press "Update Point"
+  Then I should see "Best food ever!"
+  And I should see "Points of Interest"
+  
+Scenario: Delete a Point
+  Given I follow "Destroy"
+  And I press "ok"
+  Then I should not see "Michael's Restraunt"
+  And I should see "Points of Interest"
+  
+  
+  
+  
+  
   

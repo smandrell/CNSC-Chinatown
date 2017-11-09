@@ -4,17 +4,19 @@ Feature: properly navigate the homepage
   So that I can quickly look at a list of restaurants in Chinatown
   I want to see the list of restaurants
 
-Background: restaurants have been added to the database
+Background: Be on the homepage
 
-  Given PENDING: the following points of interests exist:
-
-
-  And I am on the Restaurant page
-  Then 2 seed points should exist
-
-@wip
-Scenario: navigate to restaurants page
   Given I am on the Chinatown homepage
+
+
+Scenario: See the home page
+  Then I should see "Upcoming Partner Events"
+
+Scenario: navigate to restaurants page
   When I press "openNav"
-  And I follow "Restaurants"
-  Then I should see "Listing Restaurants"
+  And I follow "Points of Interest"
+  Then I should see "Points of Interest"
+  
+
+  
+  

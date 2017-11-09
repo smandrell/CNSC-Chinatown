@@ -11,3 +11,10 @@ When /I (un)?check the following categories: (.*)/ do |uncheck, categories_list|
     end
   }
 end
+
+Then /I should see all the points/ do
+  # Make sure that all the movies in the app are visible in the table
+  Point.all.each do |point|
+    step %{I should see "#{point.name}"}
+  end
+end
