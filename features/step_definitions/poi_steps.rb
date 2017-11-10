@@ -1,3 +1,5 @@
+#Step definitions for points model
+
 Given /^PENDING/ do
     pending
 end
