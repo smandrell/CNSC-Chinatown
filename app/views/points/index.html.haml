@@ -1,13 +1,26 @@
-%p#notice= notice
+%link{:href => "https://www.w3schools.com/w3css/4/w3.css", :rel => "stylesheet"}/
+%body
+  #mySidebar.w3-sidebar.w3-bar-block.w3-card-2.w3-animate-left{:style => "display:none"}
+    %button.w3-bar-item.w3-button.w3-large{:onclick => "w3_close()"} Close
+    %a.w3-bar-item.w3-button{:href => "/", :style => "visibility:visible"} Welcome Page
+    %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} Points of Interest
+    %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Dining" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Dining
+    %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Attraction" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Attractions
+    %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Historical" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Historical
+    %a.w3-bar-item.w3-button{:href => "/map"} Interactive Map
+  #main
+    .w3-red
+      %button#openNav.w3-button.w3-red.w3-xlarge{:onclick => "w3_open()"} ☰
+      .w3-container{:style => "display:inline-block;"}
+        %h1{:style => "text-align:center;"} Points of Interest
 
 = form_tag points_path, :method => :get, :id => 'categories_form' do
   Include: 
   - @all_categories.each do |category|
     = category
-    = check_box_tag "categories[#{category}]", 1, @selected_categories.include?(category), :id => "categories_#{category}"
+    = check_box_tag "categories[#{category}]", 1, @selected_categories.include?(category), :id => "categories_#{category}", :class => "scategory"
   = submit_tag 'Refresh', :id => 'categories_submit'
 
-%h1 Listing Points of Interest
 %table
   %thead
     %tr
@@ -25,10 +38,23 @@
         %td= point.address
         %td= point.latitude
         %td= point.longitude
-        %td= point.description
+        %td{:width => "40%"}= point.description
         %td= point.category
         %td= link_to 'Show', point
         %td= link_to 'Edit', edit_point_path(point)
         %td= link_to 'Destroy', point, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
-= link_to 'New Point', new_point_path
+= link_to 'New Point', new_point_path, :id => 'new_point'
+
+:javascript
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
