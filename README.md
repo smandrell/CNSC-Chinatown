@@ -12,8 +12,8 @@ Heroku App URL
 https://young-brushlands-70706.herokuapp.com
 
 Code Climate Badge
-[![Maintainability](https://api.codeclimate.com/v1/badges/b4f0f1aae97b5a0f221b/maintainability)](https://codeclimate.com/github/an-ju/CNSC-Chinatown/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b4f0f1aae97b5a0f221b/test_coverage)](https://codeclimate.com/github/an-ju/CNSC-Chinatown/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/maintainability)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/test_coverage)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/test_coverage)
 
 Customer Business Needs:
 
