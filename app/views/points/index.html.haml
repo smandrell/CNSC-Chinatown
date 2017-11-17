@@ -19,6 +19,8 @@
   - @all_categories.each do |category|
     = category
     = check_box_tag "categories[#{category}]", 1, @selected_categories.include?(category), :id => "categories_#{category}", :class => "scategory"
+  = text_field :latitude, 'latitude'
+  = text_field :longitude, 'longitude'
   = submit_tag 'Refresh', :id => 'categories_submit'
 
 %table
@@ -45,6 +47,7 @@
         %td= link_to 'Destroy', point, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
 = link_to 'New Point', new_point_path, :id => 'new_point'
+
 
 :javascript
       function w3_open() {
