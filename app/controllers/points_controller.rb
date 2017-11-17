@@ -16,8 +16,14 @@ class PointsController < ApplicationController
       @selected_categories = Hash[@all_categories.map {|category| [category, category]}]
     end
     
-    @points = Point.where(category: @selected_categories.keys)
+    if params[:latitude]["latitude"] != "" and params[:longitude]["longitude"] != "" and params[:latitude] != nil 
+      @points = Point.where(category: @selected_categories.keys).nearbyPoints(params[:latitude], params[:longitude])
+    else
+      @points = Point.where(category: @selected_categories.keys)
+    end
   end
+
+  #      @points = Point.where(category: @selected_categories.keys).where("(((latitude - #{@latitude})**2 + (longitude - #{@longitude})**2)**0.5) < 200")
 
   # GET /points/1
   # GET /points/1.json
