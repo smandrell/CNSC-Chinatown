@@ -13,7 +13,6 @@ https://young-brushlands-70706.herokuapp.com
 
 Code Climate Badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/maintainability)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/maintainability)
-
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ee595cfc6daf75728c76/test_coverage)](https://codeclimate.com/github/smandrell/CNSC-Chinatown/test_coverage)
 
 Customer Business Needs:
