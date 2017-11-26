@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :points
   get 'welcome/index'
   get '/map' => 'welcome#map', as: 'map'
+  get '/about' => 'welcome#about', as: 'about'
+  get '/leadership' => 'welcome#leadership', as: 'leadership'
   
   root 'welcome#index'
 
