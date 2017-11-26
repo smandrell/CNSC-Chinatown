@@ -19,8 +19,8 @@
   - @all_categories.each do |category|
     = category
     = check_box_tag "categories[#{category}]", 1, @selected_categories.include?(category), :id => "categories_#{category}", :class => "scategory"
-  = text_field :latitude, 'latitude'
-  = text_field :longitude, 'longitude'
+  = text_field :latitude, 'latitude', :value => @latitude == "" ? "latitude" : @latitude, :name => "latitude"
+  = text_field :longitude, 'longitude', :value => @longitude = "" ? "longitude" : @longitude, :name => "longitude"
   = submit_tag 'Refresh', :id => 'categories_submit'
 
 %table

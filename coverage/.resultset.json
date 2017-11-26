@@ -1,45 +1,25 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/controllers/welcome_controller.rb": [
+      "/home/ubuntu/workspace/app/models/point.rb": [
+        1,
+        1,
         1,
         null,
         1,
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        12,
         null,
         null,
+        1,
+        0,
+        0,
         null,
         null
       ],
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/helpers/points_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/helpers/welcome_helper.rb": [
-        1,
-        null,
-        null
-      ],
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/controllers/points_controller.rb": [
+      "/home/ubuntu/workspace/app/controllers/points_controller.rb": [
         1,
         1,
         null,
@@ -51,14 +31,29 @@
         null,
         null,
         1,
-        9,
-        9,
+        12,
+        12,
         null,
-        9,
-        36,
+        12,
+        48,
+        null,
+        12,
+        null,
+        12,
+        0,
+        0,
+        0,
+        null,
+        12,
+        12,
+        12,
         null,
         null,
-        9,
+        null,
+        1,
+        0,
+        null,
+        null,
         null,
         null,
         null,
@@ -122,18 +117,45 @@
         null,
         null
       ],
-      "/Users/anju/Dropbox/teaching/cs169-fa17/projects/CNSC-Chinatown/app/models/point.rb": [
-        1,
-        1,
+      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
-        9,
+        null
+      ],
+      "/home/ubuntu/workspace/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/app/helpers/points_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/app/helpers/welcome_helper.rb": [
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1510960823
+    "timestamp": 1511675203
   }
 }

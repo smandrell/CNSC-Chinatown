@@ -52,6 +52,8 @@ Scenario: Delete a Point
   Then I press "Ok" on the popup window
   Then I should not see "Michael's Restaraunt"
   And I should see "Points of Interest"
+
+Scenario: Search for Points based on location
   
   
   

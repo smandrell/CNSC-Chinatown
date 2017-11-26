@@ -7,13 +7,13 @@ Feature: display results of filtering merchants list and restuarants list
 Background: locations have been added to the database
   
     Given the following points of interest exist:
-    | name                             | address                  | description                                       | category
-    | Old St. Mary's Cathedral         | 660 California St.       | First Asian church in North America               | Historical
-    | Tianhou Temple                   | 125 Waverly Place        | Oldest Buddhist temple in the US                  | Historical
-    | Dragon's Gate                    | Bush St. & Grant Ave.    | Only authentic Chinatown Gate in North America    | Attraction
-    | Hong Kong Clay Pot Restaurant    | 960 Grant Ave.           | Chinese clay pot lunch & dinner spot.             | Dining
-    | Hunan Home's Restaurant          | 622 Jackson St.          | Family owned Chinese cooking with booths          | Dining
-    | Good Mong Kok Bakery             | 1039 Stockton St.        | Homemade dim sum and baked goods                  | Dining
+    | name                             | address                  | longitude     | latitude      | description                                       | category
+    | Old St. Mary's Cathedral         | 660 California St.       | 1.0           | 4.0           | First Asian church in North America               | Historical
+    | Tianhou Temple                   | 125 Waverly Place        | 2.0           | 5.0           | Oldest Buddhist temple in the US                  | Historical
+    | Dragon's Gate                    | Bush St. & Grant Ave.    | 3.0           | 6.0           | Only authentic Chinatown Gate in North America    | Attraction
+    | Hong Kong Clay Pot Restaurant    | 960 Grant Ave.           | 4.0           | 7.0           | Chinese clay pot lunch & dinner spot.             | Dining
+    | Hunan Home's Restaurant          | 622 Jackson St.          | 1000.0        | 8.0           | Family owned Chinese cooking with booths          | Dining
+    | Good Mong Kok Bakery             | 1039 Stockton St.        | 6.0           | 10000.0       | Homemade dim sum and baked goods                  | Dining
 
     And I am on the Points page
     Then 6 seed points should exist
@@ -34,3 +34,9 @@ Scenario: all categories selected
   And I press "Refresh"
   Then I should see all the points
 
+Scenario: Search for Points based on location
+  Given I am on the Points page
+  When I fill in "3" for "latitude"
+  And I fill in "3" for "longitude"
+  Then I should see "Tianhou Temple"
+  And I should not see "Hunan Home's Restaurant"
