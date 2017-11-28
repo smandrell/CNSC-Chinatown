@@ -10,7 +10,7 @@ class Point < ActiveRecord::Base
     end
     
     def self.nearbyPoints(latitude, longitude)
-        points = Point.all.select {|point| ((((point.latitude - latitude["latitude"].to_f)**2) + ((point.longitude - longitude["longitude"].to_f)**2))**0.5) < @@nearby }
+        points = Point.all.select {|point| ((((point.latitude - latitude.to_f)**2) + ((point.longitude - longitude.to_f)**2))**0.5) < @@nearby }
         return points
     end
 end
