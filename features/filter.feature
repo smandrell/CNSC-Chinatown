@@ -34,9 +34,11 @@ Scenario: all categories selected
   And I press "Refresh"
   Then I should see all the points
 
+@wip
 Scenario: Search for Points based on location
   Given I am on the Points page
-  When I fill in "3" for "latitude"
-  And I fill in "3" for "longitude"
+  When I fill in "3" for "Latitude"
+  And I fill in "3" for "Longitude"
   Then I should see "Tianhou Temple"
   And I should not see "Hunan Home's Restaurant"
+  And I should not see "Good Mong Kok Bakery"
