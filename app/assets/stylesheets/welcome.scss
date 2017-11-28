@@ -114,3 +114,27 @@ body {font-family: Verdana,sans-serif;margin:0}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.details {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.leadership {
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.person_img {
+  width: 30%;
+  padding: 15px;
+  float: left;
+  /* Just so it's visible */
+}
+.person_info {
+  overflow: hidden;
+  width: 49%;
+  /* Grow to rest of container */
+  /* Just so it's visible */
+}

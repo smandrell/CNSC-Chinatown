@@ -1,0 +1,107 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title W3.CSS
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %link{:href => "https://www.w3schools.com/w3css/4/w3.css", :rel => "stylesheet"}/
+  %body
+    #mySidebar.w3-sidebar.w3-bar-block.w3-card-2.w3-animate-left{:style => "display:none"}
+      %button.w3-bar-item.w3-button.w3-large{:onclick => "w3_close()"} Close
+      %a.w3-bar-item.w3-button{:href => "/", :style => "visibility:visible"} Welcome Page
+      %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} Points of Interest
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Dining" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Dining
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Attraction" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Attractions
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Historical" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Historical
+      %a.w3-bar-item.w3-button{:href => "/map"} Interactive Map
+      %a.w3-bar-item.w3-button{:href => "/about"} About
+      %a.w3-bar-item.w3-button{:href => "/leadership"} Leadership
+
+    #main
+      .w3-red
+        %button#openNav.w3-button.w3-red.w3-xlarge{:onclick => "w3_open()"} ☰
+        .w3-container{:style => "display:inline-block;"}
+          %h1{:style => "text-align:center;"} Our Leadership
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/JuliaLing.jpg"}/
+        .person_info
+          %h2 Julia Ling 甯陳翠華, President 主席
+          %p Born and raised in Hong Kong, Julia Ling obtained her LLB law degree at the University of Cardiff in England and has a proud track record of being a very successful non-profit executive and fundraiser. As Director of Fund Development at Chinese Hospital Foundation, she helped launch a comprehensive capital campaign to raise over $25 Million from the community to build a new patient tower for Chinese Hospital – activities include special events, golf tournaments, employee campaign, physician campaign, major gifts campaign, real estate donation, radiothon, telethon, direct mail and online donation.Ling had served in various positions at CNSC in past years – Executive Director (2001-2007), Board Secretary (2012-2016), Special Advisor and Board Member (2016-2017). She was the recipient of the “Outstanding Overseas Chinese” Award by Chinese Consolidated Women’s Association in 2014 and the “Giving Back” Award by Asian Women Resource Center in 2015.
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/NancyLau.jpg"}/
+        .person_info
+          %h2 Nancy Lau 劉李美秀, Vice President 副主席
+          %p Nancy Lau, born in Hong Kong, has been an active community member in San Francisco for over 30 years. I had been a Vice President of Loong Kong Tien Yee Association of San Francisco Women Club. Nancy is currently President of Lew’s Family Association Women Group, Bing Kong Tong Benevolent Association Headquarter Treasurer, The Republic of China Coordinator, Overseas Community Affairs Council and Vice President of Chinese Newcomers Service Center. As the Chinese Newcomers Service Center’s Vice President and a Board Member, I hold the utmost respect and admiration for the work that you do every day to help the underserved low-income and immigrant communities.       
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/StellaLee.png"}/
+        .person_info
+          %h2 Stella Lee 李蕙清, Secretary 秘書
+          %p Ms. Lee is currently an investor who retired from over 39 years of public services from the Department of the Treasury since January 2016. She represented the Internal Revenue Service in a wide array of capacities during her tenure where she had a broad-based knowledge on tax administration with substantial experience in leading the organization in delivering tax compliance programs and services. B.A., 1975, University of California, Berkeley.
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/AlanTse.png"}/
+        .person_info
+          %h2 Alan Tse 謝偉倫, Treasurer 財政
+          %p Alan is an investor at Dodge & Cox, an investment management company based in San Francisco that manages over $300BN. Prior to Dodge & Cox, Alan was an equity analyst at Barclays in New York. He graduated from the University of Pennsylvania’s Wharton School with a B.S. in Economics, summa cum laude.
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/LindaLow.jpg"}/
+        .person_info
+          %h2 Linda Low 劉佩君, Asst. Treasurer 副財政
+          %p Ms. Linda Low is a Branch Manager at Wells Fargo in the Sunset district of San Francisco, serving the community since 2001. Born in Monterey and raised in San Francisco, Linda is passionate about giving back to her community through volunteer work, fundraising, and providing financial literacy. Linda also continues to contribute to the community in her capacity as a restaurateur and Bay Area Entertainer; in addition, Linda was the Charity Empress in 2012 and has served the CNSC board since 2015.
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/MeilingElsner.jpg"}/
+        .person_info
+          %h2 Meiling Elsner 周美玲
+          %p Meiling Elsner is Vice President and Cluster Branch Manager of HSBC Bank at the flagship location Montgomery and San Francisco Chinatown branches for Northern California & Washington State , Retail Banking and Wealth Management. Growing up and being educated in Singapore, Meiling started her financial banking career in Singapore then came to the United States to further her education as well as work within the financial sector in conjunction to pursuing a secondary degree in Business Administration. Meiling’s financial banking career has evolved over two continents from Singapore to the US and has accumulated more than 14 years of experience. Along with her many years of banking experience, she is able to speak several languages and with her unparalleled passion for financial banking, she has cultivated strong relationships with numerous community and professional associations .Meiling continues her devoted career within the financial sector at HSBC and further expanding her organizational footprint around the Bay Area.
+      .leadership
+        .person_img
+        .person_info
+          %h2 Kristy Lee 周玉芳
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/LouisLam.png"}/
+        .person_info
+          %h2 Louis Lam 林志斯
+          %p 1961年出生，性別男。服務社區超過二十五年，曾任亞裔建築商協會理事，華人實業協會董事，舊金山中華總商會名譽董事等職。現任American Teo Chew Business Association Inc.（美國潮商會）會長、Teo Chew Community Center Inc.Northery California U.S.A.（美國北加州潮州會館）会长。T.C.M.America.董事長，HWL Enterprise Inc.董事，Grey Eagle Flight Academy.董事等。
+      .leadership
+        .person_img
+        .person_info
+          %h2 Clarissa Lee 李佩珊
+          %p Clarissa is a Property Management Project Coordinator at Jones Lang LaSalle (JLL), a commercial real estate and investment management company. In this role, she creates new business proposals for prospective clients and supports business development initiatives. Prior to joining JLL, she was a PR intern at Minted. Clarissa graduated from UC San Diego with a degree in International Studies.
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/VincentLo.png"}/
+        .person_info
+          %h2 Vincent Lo 羅永彰
+          %p Vincent was born and raised in Hong Kong and is currently an Associate at Dodge & Cox focused on investing in real estate and energy. Prior to joining Dodge & Cox, he worked at Hang Seng Bank Ltd (HK) and Atlas Investment Partners. He graduated with honors from the University of Chicago (B.A. in Economics).
+      .leadership
+        .person_img
+          %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/MayAnnWong.jpg"}/
+        .person_info
+          %h2 May Ann Wong 黃美貞
+          %p May Ann Wong brings over 30 years of experience in the Financial Services Industry. She leverages this experience to help generate new donations for Chinese Newcomers Service Center. She has been in a wide range of roles at Bank of the Orient, where she is currently an Assistant Vice President / Assistant Credit Operations Administrator/CRA. She received a certificate in Business Administration from the U.C. Berkeley Extension after receiving a B.A. with honors from U.C. Santa Cruz. Her corporate experience is equally matched with her dedication and commitment to the Chinese community. For the past five years, May Ann has been a volunteer at the San Francisco Chinese Chamber of Commerce, where she has helped to organize the Miss Chinatown Pageant and Chinese New Year Parade festivities. May Ann currently serves on the Board of Directors for Chinese Newcomers Service Center and Community Youth Center, where she is the Treasurer, since 2004. She is also a member of the Oakland Chinese Chamber of Commerce.
+      .details
+        %h2 Building Fund Committee
+        %ul
+          %li Bill Lock, Chair
+          %li Arthur Chan
+          %li Eleanor Chang
+          %li Joseph Kwok
+          %li Kai Man Lee
+          %li Hon. Judge Lillian Kwok Sing
+          %li Albert Tam
+          %li Hon. Judge Julie Tang
+          %li Barbara C. Yee
+          %li Hon. Irene Yee-Riley
+        %h2 Advisory Committee 
+        %ul
+          %li Kai Man Lee
+          %li Albert S. Tam
+          %li Hon. Irene Yee-Riley
+        %p Special Thanks to Former Board President Mr. Albert S. Tam, Former Vice President Mr. Henry Young (Not in the picture), Former Treasurer Mr. Thomas Yuen, Assistant Secretary Ms. Robyn Lee, and Mr. Adrian Law (Not in the picture), helped CNSC for the past 5 to 6 years as a board of Directors.
+        %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/Robyn_Albert_Thomas.jpg", :style => "width: 50%; padding: 15px"}/

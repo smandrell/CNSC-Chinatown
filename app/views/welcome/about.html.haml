@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title W3.CSS
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %link{:href => "https://www.w3schools.com/w3css/4/w3.css", :rel => "stylesheet"}/
+  %body
+    #mySidebar.w3-sidebar.w3-bar-block.w3-card-2.w3-animate-left{:style => "display:none"}
+      %button.w3-bar-item.w3-button.w3-large{:onclick => "w3_close()"} Close
+      %a.w3-bar-item.w3-button{:href => "/", :style => "visibility:visible"} Welcome Page
+      %a.w3-bar-item.w3-button{:href => "/points", :style => "visibility:visible"} Points of Interest
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Dining" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Dining
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Attraction" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Attractions
+      %a.w3-bar-item.w3-button{:href => points_path(:categories => {"Historical" => "1"}), :style => "visibility:visible"} &nbsp&nbsp - Historical
+      %a.w3-bar-item.w3-button{:href => "/map"} Interactive Map
+      %a.w3-bar-item.w3-button{:href => "/about"} About
+      %a.w3-bar-item.w3-button{:href => "/leadership"} Leadership
+
+
+    #main
+      .w3-red
+        %button#openNav.w3-button.w3-red.w3-xlarge{:onclick => "w3_open()"} ☰
+        .w3-container{:style => "display:inline-block;"}
+          %h1{:style => "text-align:center;"} About the CNSC!
+      .details
+        %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/group-family-001-1000x500.jpg"}/
+        %h1 Our Mission
+        %p The Chinese Newcomers Service Center (CNSC) mission is to provide underserved communities with social, economic, workforce, and business services to transform their lives. CNSC is a nonprofit organization that provides multilingual services that help Chinese Immigrants adapt to life in the United States. CNSC serves as a bridge between the two cultures, enhancing the physical, mental, social, and economic wellbeing of immigrants, thus facilitating their efforts to become self-sufficient, contributing members of the community.
+        %img{:src => "http://www.chinesenewcomers.org/wordpress/wp-content/uploads/sf-chinatown-gateway-1000x500.jpg"}/
+        %h1 Our History
+        %p Chinese Newcomers Service Center (CNSC) was established in the summer of 1969 by the International Institute of San Francisco in collaboration with Chinatown North Beach community leaders. CNSC’s first home was a one-room office located on the fourth floor of a Grant Avenue building (above a bank), operating under the able leadership of Ms. Marie-Louise Ansak, who was a social worker with the International Institute. The initial funding was provided by the United Bay Area Crusade (United Way), the Van Loben Sels Foundation, and the San Francisco Department of Social Services. The landmark 1965 U.S. Immigration Law expanded the quota of China-born immigrants to 20,000 per year, leading to the needs of Chinese immigrants and refugees, who began to arrive in large numbers in the San Francisco Bay Area, being largely unmet. At that time, not many community agencies were serving the San Francisco Chinatown residents, and city-wide agencies were limited in their ability to serve non-English speaking clients. The founders of CNSC meant for it to be a one-stop information/referral agency that could meet most of the needs of a non-English speaking family arriving to this new country. The goal for each newcomer was: first, acculturation; then integration; and finally, citizenship. CNSC continues to provide transitional guidance while empowering immigrants to become self-supporting and contributing members of society.
+

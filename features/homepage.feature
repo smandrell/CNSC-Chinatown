@@ -16,7 +16,18 @@ Scenario: navigate to restaurants page
   When I press "openNav"
   And I follow "Points of Interest"
   Then I should see "Points of Interest"
-  
+
+Scenario: navigate to points of interest page
+  Given I am on the Chinatown homepage
+  When I press "openNav"
+  And I follow "Leadership"
+  Then I should see "Our Leadership"
+
+Scenario: navigate to points of interest page
+  Given I am on the Chinatown homepage
+  When I press "openNav"
+  And I follow "About"
+  Then I should see "About"
 
   
   
