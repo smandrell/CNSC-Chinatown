@@ -18,3 +18,7 @@ Then /I should see all the points/ do
     step %{I should see "#{point.name}"}
   end
 end
+
+Then /^I take a screenshot$/ do
+  puts page.html.to_s
+  end

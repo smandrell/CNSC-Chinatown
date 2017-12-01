@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-28T19:45:55+00:00">2017-11-28T19:45:55+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-01T14:51:52+00:00">2017-12-01T14:51:52+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.67
+         3.59
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>45</td>
         <td>38</td>
         <td>7</td>
-        <td>3.5</td>
+        <td>4.8</td>
       </tr>
       
       <tr>
@@ -117,7 +117,7 @@
         <td>9</td>
         <td>7</td>
         <td>2</td>
-        <td>1.8</td>
+        <td>2.3</td>
       </tr>
       
     </tbody>
@@ -133,7 +133,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.9
+         3.94
        </span>
     </span> hits/line)
   </h2>
@@ -175,7 +175,7 @@
         <td>45</td>
         <td>38</td>
         <td>7</td>
-        <td>3.5</td>
+        <td>4.8</td>
       </tr>
       
       <tr>
@@ -200,7 +200,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.8
+         2.3
        </span>
     </span> hits/line)
   </h2>
@@ -232,7 +232,7 @@
         <td>9</td>
         <td>7</td>
         <td>2</td>
-        <td>1.8</td>
+        <td>2.3</td>
       </tr>
       
     </tbody>
@@ -520,14 +520,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="12">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="12">
+          <span class="hits">15</span>
           
           <code class="ruby">    @all_categories = Point.all_categories</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="13">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="13">
+          <span class="hits">15</span>
           
           <code class="ruby">    @selected_categories = params[:categories] || session[:categories] || {}</code>
         </li>
@@ -538,14 +538,14 @@
           <code class="ruby">    </code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="15">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="15">
+          <span class="hits">15</span>
           
           <code class="ruby">    if @selected_categories == {}</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="16">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="56" data-linenumber="16">
+          <span class="hits">56</span>
           
           <code class="ruby">      @selected_categories = Hash[@all_categories.map {|category| [category, category]}]</code>
         </li>
@@ -562,8 +562,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="19">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="19">
+          <span class="hits">15</span>
           
           <code class="ruby">    if check_int(params[:latitude]) and check_int(params[:longitude])</code>
         </li>
@@ -592,20 +592,20 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="24">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="24">
+          <span class="hits">15</span>
           
           <code class="ruby">      @points = Point.where(category: @selected_categories.keys)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="25">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="25">
+          <span class="hits">15</span>
           
           <code class="ruby">      @latitude = &quot;&quot;</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="26">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="26">
+          <span class="hits">15</span>
           
           <code class="ruby">      @longitude = &quot;&quot;</code>
         </li>
@@ -634,8 +634,8 @@
           <code class="ruby">  def check_int(string_to_check)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="31">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="31">
+          <span class="hits">15</span>
           
           <code class="ruby">       /\A[-+]?\d+\z/.match(string_to_check)</code>
         </li>
@@ -1293,8 +1293,8 @@
           <code class="ruby">    def self.all_categories</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="9">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="9">
+          <span class="hits">15</span>
           
           <code class="ruby">        %w(Dining Historical Attraction)</code>
         </li>

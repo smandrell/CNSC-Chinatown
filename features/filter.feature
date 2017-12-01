@@ -18,23 +18,25 @@ Background: locations have been added to the database
     And I am on the Points page
     Then 6 seed points should exist
 
-@wip    
+
 Scenario: filter locations by restaurants
     Given I am on the Points page
     When I check the following categories: Dining
+    And I uncheck the following categories: Historical, Attraction
+    And I press "Refresh"
     Then I should see "Hong Kong Clay Pot Restaurant"
     And I should see "Hunan Home's Restaurant"
     And I should see "Good Mong Kok Bakery"
     And I should not see "Dragon's Gate"
     And I should not see "Tianhou Temple"
 
-@wip    
+@wip
 Scenario: all categories selected
   When I check the following categories: Dining, Historical, Attraction
   And I press "Refresh"
   Then I should see all the points
 
-@wip
+
 Scenario: Search for Points based on location
   Given I am on the Points page
   When I fill in "3" for "Latitude"

@@ -1,41 +1,21 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/ubuntu/workspace/app/controllers/welcome_controller.rb": [
+      "/home/ubuntu/workspace/app/models/point.rb": [
+        1,
+        1,
         1,
         null,
         1,
+        null,
+        null,
+        1,
+        15,
         null,
         null,
         1,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/app/helpers/points_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/app/helpers/welcome_helper.rb": [
-        1,
         null,
         null
       ],
@@ -51,26 +31,26 @@
         null,
         null,
         1,
-        10,
-        10,
+        15,
+        15,
         null,
-        10,
-        40,
+        15,
+        56,
         null,
         null,
-        10,
+        15,
         0,
         0,
         0,
         null,
-        10,
-        10,
-        10,
+        15,
+        15,
+        15,
         null,
         null,
         null,
         1,
-        10,
+        15,
         null,
         null,
         null,
@@ -134,25 +114,45 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/models/point.rb": [
-        1,
-        1,
-        1,
-        null,
+      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
-        10,
+        null
+      ],
+      "/home/ubuntu/workspace/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/app/helpers/points_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/app/helpers/welcome_helper.rb": [
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
         null,
         null,
         1,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1511898355
+    "timestamp": 1512139912
   }
 }
